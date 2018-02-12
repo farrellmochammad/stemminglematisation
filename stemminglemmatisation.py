@@ -1,17 +1,10 @@
 from nltk.stem import PorterStemmer , WordNetLemmatizer
 
 stemmer = PorterStemmer()
-lemmatiser = WordNetLemmatizer()
-sentences = " I have studied computer science for three years I have been learning about manage data That thing is a very interesting for me"
-arrayWord = sentences.split(" ")
-
-"""emmatiser = WordNetLemmatizer()
-
-print("Stem %s: %s" % ("studying", stemmer.stem("studying")))
-print("Lemmatise %s: %s" % ("studying", lemmatiser.lemmatize("studying")))
-print("Lemmatise %s: %s" % ("studying", lemmatiser.lemmatize("studying", pos="v")))
-"""
+#lemmatiser = WordNetLemmatizer()
+words = "Washing Bringing Catched Pain Plating Goes Groups Burned Lifting Likes Locking Disgusting Marker Maping Slept Doing Rating Cooking Cried Bleed Boxs Bones Acting"
+arrayWord = words.split(" ")
 
 for i in arrayWord:
-	print(stemmer.stem(i),lemmatiser.lemmatize(i))
-
+	print(stemmer.stem(i))
+	""",lemmatiser.lemmatize(i)"""
